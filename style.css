@@ -1,0 +1,125 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+  }
+  
+body {
+      background-color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+        Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+    img {
+        width: 100%;
+        height: 80%;
+    }
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 32px;
+        padding: 0 15px;
+    }
+    .button-area {
+        display: grid;
+        grid-template-columns: 120px 156px 1fr;
+        grid-column-gap: 4px;
+    }
+    button.preview-button {
+        display: grid;
+        grid-template-columns: 20px 1fr;
+        align-content: center;
+        align-items: center;
+    }
+    .preview-button {
+        background-color: #ffffff;
+        border: 2px solid #ff7a00;
+        color: #ff7a00;
+        padding: 7px 15px;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .preview-button a {
+        text-decoration: none;
+        color: #ff7a00;
+        font-weight: 600;
+    }
+    button.marketing-tools {
+        background-color: #ffffff;
+        border: 2px solid #ff7a00;
+        color: #ff7a00;
+        padding: 0;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        width: 80%;
+    }
+    .preview-button:hover, .marketing-tools:hover{
+        color: #ffffff;
+        background-color: #ff7a00;
+      }
+      .preview-button:hover a, .marketing-tools:hover a{
+        color: #ffffff;
+        background-color: #ff7a00;
+      }
+      button.marketing-tools{
+        background-color: #ffffff;
+        border: 2px solid #ff7a00;
+        color: #ff7a00;
+        padding: 0;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        width: 80%;
+      }
+      .marketing-tools a{
+        text-decoration: none;
+        color: #ff7a00;
+        font-weight: 600;
+      }
+
+      button.copy-link {
+        display: flex;
+        border: 2px solid #ff7a00;
+        background: none;
+        justify-content: space-between;
+        align-items: center;
+        /* text-decoration: none; */
+        border-radius: 5px;
+        /* cursor: pointer; */
+    }
+    .overflow-hidden {
+        overflow: hidden;
+        max-height: 17px;
+        max-width: 200px;
+        text-decoration: none;
+        color: black;
+    }
+    .copy-url {
+        width: -webkit-fill-available;
+        background-color: #ff7a00;
+        padding: 6px 0px 6px 0px;
+        margin: 0px;
+        color: white;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+    
+    @media (max-width: 540px){
+         .row {
+            grid-template-columns: 1fr;
+        } 
+        img {
+            width: 100%;
+        }
+    }
